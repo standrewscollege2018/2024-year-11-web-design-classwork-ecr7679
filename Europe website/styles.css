@@ -1,0 +1,43 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+@font-face{
+    /* font-family is what we are naming the font (like a variable name) */
+    font-family: Anth;
+    /* scr is the location of the font */
+    src: url(fonts/Anthelion.ttf)
+}
+body {
+    background-color: rgb(231, 236, 239);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 20px 30px;
+}
+h1  {
+    color: rgb(39, 72, 139);
+    font-size: 40pt;
+    font-family: Anth
+    
+}
+h2  {
+    margin-top: 10px;
+    color: rgb(96, 150, 186);
+    font-family: Anth
+}
+p  {
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+a:link, a:visited { 
+    color:rgb(163, 206, 241);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    color: rgb(39, 76, 119);
+}
+ul, ol {
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
