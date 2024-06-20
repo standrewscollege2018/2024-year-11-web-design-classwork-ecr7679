@@ -40,7 +40,7 @@ ul, ol {
 }
 .container {
     display: grid;
-    grid-template-columns: 50% 50% ;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 .main-content {
     background-color: rgb(48, 112, 184);
@@ -56,10 +56,39 @@ ul, ol {
     padding: 15px;
     margin: 20px;
     border-radius: 15px;
+    border: 5px solid rgb(48, 112, 168);
 }
 .main-content img {
     /* this code resixes the image, keeping it in prodortion
     and no wider than 100% of the div tag it is within */
     max-width: 100%;
     height: auto;
+}
+.mq-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.intro {
+    padding: 15px;
+}
+.main {
+    padding: 15px;
+}
+/* the media query enables us to change the rules of some tags or 
+classes based on the screen sizeIn this case, the rules inside the 
+media query will come into effect when the screen size drops below 800px */
+@media only screen and (max-width: 1000px) {
+   .mq-container {
+    grid-template-columns: 1fr 1fr;
+   } 
+}
+@media only screen and (max-width: 800px) {
+    .mq-container {
+     grid-template-columns: 1fr;
+    } 
+    .intro {
+        border: 1px white solid;
+    }
+ }
+    
 }
